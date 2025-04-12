@@ -2,7 +2,7 @@
 
 //En el archivo index.html que tienes abierto en el navegador (preferiblemente chrome o firefox) vamos a trabajar con la consola, abre tu inspector y en la pestaña de consola, mira si puedes ver el mensaje escrito abajo.
 
-console.log('Hola soy tu consola y juntas vamos a aprender Javascript')
+console.log('Hola soy tu consola y juntas vamos a aprender Javascript');
 
 //Si has encontrado el mensaje puedes continuar con los ejercicios
 
@@ -60,9 +60,11 @@ switch (pet) {
 
 const weather = "frio"
 
-const result = weather == "soleado" ? "Me vestiré con un vestido" : "Me vestiré con pantalón";//Escribe tu código aquí;
+const result = weather == "soleado" ? "Me vestiré con un vestido" : "Me vestiré con pantalón";
 
-console.log(result)
+//Escribe tu código aquí;
+
+console.log(result);
 
 //Ejercicio 7: cambia el valor de weather a "frío" y mira el resultado en consola para comprobar que tu código funciona bien.
 
@@ -117,6 +119,9 @@ const programmers = [
 
 //Escribe tu código aquí
 
+for (let programmer in programmers) {
+    console.log(programmer + ": " + programmers[programmer].name + " " + programmers[programmer].lastname + ", " + programmers[programmer].knowledge);
+}
 
 //Ejercicio 11: Con un bucle for of imprime en consola "Hola, mi nombre es ... " y reemplaza los tres puntos con cada nombre del array dado.
 
@@ -124,25 +129,53 @@ const names = ['Carla', 'Alex', 'Judith', 'Maria', 'Noelia']
 
 //Escribe tu código aquí
 
+for (friend of names) {
+    console.log("Hola, mi nombre es " + friend);
+}
 
 //Ejercicio 12: Con un bucle while imprime en consola una lista del 1 al 5.
 
 //Escribe tu código aquí
 
+let i = 1;
+while(i<6) {
+    console.log(i);
+    i++;
+}
 
 //Ejercicio 13: Realiza el mismo ejercicio anterior pero con un bucle do while.
 
 //Escribe tu código aquí
 
+let f = 1
+do {
+    console.log(f);
+    f++;
+} while (f<6);
+
 
 //Ejercicio 14: Saludo Personalizado
-//Crea una función llamada saludar que tome un parámetro llamado nombre y devuelva un saludo personalizado. Luego, llama a la función con diferentes nombres y muestra el resultado en la consola.
+//Crea una función llamada saludar que tome un parámetro llamado amigo y devuelva un saludo personalizado. Luego, llama a la función con diferentes nombres y muestra el resultado en la consola.
 
 //Escribe tu código aquí
 
+function saludar(amigo) {
+    return "Hola " + amigo;
+}
+saludar("Pepe");
+saludar("Lola");
+console.log(saludar("Pepe"));
+console.log(saludar("Lola"));
 
 //Ejercicio 15: Calcular el Área de un Rectángulo
 //Crea una función llamada calcularAreaRectangulo que tome dos parámetros (ancho y alto) y devuelva el área del rectángulo. Luego, llama a la función con diferentes valores de ancho y alto y muestra el resultado en la consola.
 
 //Escribe tu código aquí
 
+function calcularAreaRectangulo(ancho, alto) {
+    return alto*ancho;
+}
+calcularAreaRectangulo(2, 2);
+calcularAreaRectangulo(3, 2);
+console.log(calcularAreaRectangulo(2, 2));
+console.log(calcularAreaRectangulo(3, 2));
