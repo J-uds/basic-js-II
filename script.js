@@ -15,6 +15,8 @@ const age = 12
 
 if (age >= 18) {
     console.log("Eres mayor de edad");
+} else {
+    console.log("No eres aún mayor de edad");
 }
 
 //Ejercicio 2: Cambia el valor de age a 12 para mirar el resultado del ejercicio anterior.
